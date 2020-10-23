@@ -4,6 +4,7 @@
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/JCDMeira/js-ts-completo">
 <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/JCDMeira/js-ts-completo">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/JCDMeria/js-ts-completo">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/JCDMeira/js-ts-completo">
 <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/JCDMeira/js-ts-completo?style=social">  <image alt="GitHub Social"  
   src="https://img.shields.io/github/watchers/JCDMeira/js-ts-completo?style=social" 
   />
