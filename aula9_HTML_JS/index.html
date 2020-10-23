@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha primeira página HTML</title>
+    
+    <script>
+        // um comentário
+        console.log('olá mundo');
+
+        /*#nota# não é uma boa prática colocar código javascrit nessa parte do código
+        pois ao colocar nesse local gerará atraso no carregamento da página, devido ao
+        fato de que ao encontrar um código o navegador tentará executar os scrips.
+        */
+    </script>
+</head>
+
+<body>
+
+    <script src='index.js'>
+        // console.log('Este trecho será exibido no console do navegador') 
+        /* código JS pode ser colocada dentro da tag scrip, mas é melhor 
+        prática separar os arquivos, usando assim o apontamento do caminho (src)
+        para o arquivo .js, da forma a seguir
+            <script src='index.js'>
+        */
+        /* Um melhor prática é adicionar os scripts no final do body
+        */
+    </script>
+</body>
+</html>
