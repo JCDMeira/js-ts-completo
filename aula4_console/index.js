@@ -1,5 +1,5 @@
+//* Aula4 do comando console
 //#obs ele cita como aula 3 no vídeo, na udemy está 4
-//* Aula do comando console
 
 //* diferenças ao apresentar uma string (texto)
 //#nota a aspas duplas pode conter aspas simples e o aspas simples pode envolver aspas duplas
