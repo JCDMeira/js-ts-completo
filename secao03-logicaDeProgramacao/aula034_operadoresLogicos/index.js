@@ -30,7 +30,7 @@ console.log(true || false);
 const expressaoOr = (true || true);
 console.log(expressaoOr);
 
-//_ Se uma for falsa se todas as expressões forém falsas
+//_ Se uma for falsa se todas as expressões forem falsas
 console.log(false || false);
 console.log(false || false || false || false);
 

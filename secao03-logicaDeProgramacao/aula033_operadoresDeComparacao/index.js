@@ -40,6 +40,6 @@ console.log(num1 === num2);
     _ a comparação estrita compara o valor e o tipo da variável ou 
     _ dado em questão. Isso é válido para a igualdade e desigualdade.
     ! O uso do modo estrito é altamente recomendado para evitar
-    ! comportamentos indejesados na execusão do código.
+    ! comportamentos indesejados na execução do código.
     ! EVITE O USO DA IGUALDADE E DESIGUALDADE COMUNS
 */
