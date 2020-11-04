@@ -33,8 +33,8 @@ console.log(dataString.toString());
 console.log(dataString1.toString());
 
 //|obter dia
-console.log('Dia', data.getDate());
-console.log('Mês', data.getMonth()+1);  //? -> dia de domingo (0) a sábado (6)
+console.log('Dia', data.getDate()); //? -> dia de domingo (0) a sábado (6)
+console.log('Mês', data.getMonth()+1);  
 console.log('Ano', data.getFullYear());
 console.log('Hora', data.getHours());
 console.log('Min', data.getMinutes());
