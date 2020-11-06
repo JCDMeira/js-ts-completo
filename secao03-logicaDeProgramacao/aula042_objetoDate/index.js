@@ -19,10 +19,10 @@ const dataEscolhida = new Date(2019, 3, 20, 15, 14, 27, 500); //?ano, mes, dia, 
 //#nota# O mês se conta do 0 ao 11
 //_ os milesimos vão até 999, se colocar 1000 ou mais ele passa 1 para a diante, corrigindo.
 //_ assim como segundos de 0 a 59 e assim por diante.
-//_ Se omtir algo ele aceitará como zero
-//_ Não é possível omtir um valor e colocar o mais a direita dele.
-//_ ex: se colocar o ano, omtir o mes e colocar o dia, os dias serão contados como meses.
-//_ mas é possível omtir os mais a direita, até no máximo os meses, sendo necessário indicar o ano. 
+//_ Se omitir algo ele aceitará como zero
+//_ Não é possível omitir um valor e colocar o mais a direita dele.
+//_ ex: se colocar o ano, omitir o mês e colocar o dia, os dias serão contados como meses.
+//_ mas é possível omitir os mais a direita, até no máximo os meses, sendo necessário indicar o ano. 
 console.log(dataEscolhida.toString()) //? Sat Apr 20 2019 15:14:27 GMT-0300 (Horário Padrão de Brasília)
 
 //| formato datastring
