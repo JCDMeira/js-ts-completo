@@ -42,6 +42,7 @@ function criaCalculadora() {
         const el = e.target;
         if(el.classList.contains('btn-num')){
           this.btnParaDisplay(el.innerText);
+          this.display.focus();
         }
 
         if(el.classList.contains('btn-clear')){
