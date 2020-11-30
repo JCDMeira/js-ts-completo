@@ -1,4 +1,4 @@
-//* Aula 85 - Revisando objetos
+//* Aula 85 - Revisando objetos / menção do freeze
 
 /*
     #Nota#
