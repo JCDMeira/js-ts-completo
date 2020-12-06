@@ -34,6 +34,7 @@ function scope() {
         const cpf = inputCpf.value;
 
         let cpfLimpo = cpf.replace(/\D+/g, '');
+
         cpfArray = Array.from(cpfLimpo);
         // console.log(typeof cpfTeste);
 
@@ -75,8 +76,9 @@ function scope() {
             return (recebidosFormatados === calculadosFormados) ? 'CPF é válido' : 'CPF não é válido';
         }
 
+
         const cpfValido = confirma(cpfArray, somaDigito1, somaDigito2);
-        result.innerHTML += `<p> ${cpfValido} </p>`
+        result.innerHTML = `<p> ${cpfValido} </p>`
 
     }
 
