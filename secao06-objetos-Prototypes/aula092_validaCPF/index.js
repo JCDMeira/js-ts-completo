@@ -30,55 +30,65 @@ function scope() {
     function handleSubmit(event) {
         event.preventDefault();
 
-        const inputCpf = document.querySelector('.cpf')
-        const cpf = inputCpf.value;
-
-        let cpfLimpo = cpf.replace(/\D+/g, '');
-
-        cpfArray = Array.from(cpfLimpo);
-        // console.log(typeof cpfTeste);
-
-        //console.log(cpfArray.reduce((acc,value)=> acc + Number(value),0));
-        const somaDigito1 = cpfArray.slice(0, -2).reduce((acc, value, index) => {
-            const multiplicador = 10 - index;
-            const ValueNumber = Number(value);
-            const multiplicacaoUnitaria = ValueNumber * multiplicador;
-            /*
-                console.log('acumulador:',acc, 'valor:',value);
-                console.log( 'index:',index,'multiplicador:', multiplicador ,'result:', multiplicacaoUnitaria);
-            */
-            acc += multiplicacaoUnitaria;
-            return acc
-        }, 0)
-
-        const somaDigito2 = cpfArray.slice(0, -1).reduce((acc, value, index) => {
-            const multiplicador = 11 - index;
-            const ValueNumber = Number(value);
-            const multiplicacaoUnitaria = ValueNumber * multiplicador;
-            /*
-                console.log('acumulador:',acc, 'valor:',value);
-                console.log( 'index:',index,'multiplicador:', multiplicador ,'result:', multiplicacaoUnitaria);
-            */
-            acc += multiplicacaoUnitaria;
-            return acc
-        }, 0)
-
-        function confirma(cpf, dig1, dig2) {
-            const digitosRecebidos = cpf.slice(9);
-            //! Const abaixo é usada para comparação, pois tem os dígitos recebidos já formatados.
-            const recebidosFormatados = `${digitosRecebidos[0]}${digitosRecebidos[1]}`;
-
-            const dig1Formatado1 = (11 - (dig1 % 11)) >= 9 ? 0 : (11 - (dig1 % 11));
-            const dig1Formatado2 = (11 - (dig2 % 11)) >= 9 ? 0 : (11 - (dig2 % 11));
-            //! Const abaixo é usada para comparação, pois tem os dígitos calculados já formatados.
-            const calculadosFormados = `${dig1Formatado1}${dig1Formatado2}`
-
-            return (recebidosFormatados === calculadosFormados) ? 'CPF é válido' : 'CPF não é válido';
+        //#Nota# Uma constructor function que retorna um objeto com o cpf sem . e -;
+        function ValidaCpf(cpfInput) {
+            Object.defineProperty(this, 'cpfLimpo', {
+                enumerable: true,
+                get: function () {
+                    return cpfInput.replace(/\D+/g, '');
+                }
+            });
         }
 
+        //! Agora todos os métodos serão usados como prototypes. Pois o foi criado usando constructor function. Portanto convém de centralizar.
 
-        const cpfValido = confirma(cpfArray, somaDigito1, somaDigito2);
-        result.innerHTML = `<p> ${cpfValido} </p>`
+        //_ método de validação
+        ValidaCpf.prototype.valida = function () {
+            //_ conferir se o cpf é vazio e tem a quantidade certa de números.
+            if (typeof this.cpfLimpo === 'undefined') return false;
+            if (this.cpfLimpo.length !== 11) return false;
+
+            //_ checar sequencia.
+            if (this.isSequencia()) return 'CPF é inválido';
+
+            //_ criar os digistos de comparação
+            const cpfParcial = this.cpfLimpo.slice(0, -2);
+            const digito1 = this.criarDigito(cpfParcial);
+            const digito2 = this.criarDigito(cpfParcial + digito1);
+
+            //_ comparar os cpfs.
+            const cpfFinal = cpfParcial + digito1 + digito2;
+            return cpfFinal === this.cpfLimpo ? 'CPF é válido' : 'CPF é inválido';
+        }
+
+        //_ Método para montar os dígitos.
+        ValidaCpf.prototype.criarDigito = function (cpfParcial1) {
+            const cpfArray = Array.from(cpfParcial1);
+            const total = cpfArray.reduce((acc, value, index) => {
+                acc += ((cpfArray.length + 1 - index) * value);
+                return acc;
+            }, 0);
+
+            const digito = 11 - (total % 11);
+            return digito >= 9 ? '0' : String(digito);
+        }
+
+        //_ checar se é uma sequência
+        ValidaCpf.prototype.isSequencia = function () {
+            const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length);
+            return sequencia === this.cpfLimpo;
+        };
+
+        //_ Captura o input de classe cpf 
+        const inputCpf = document.querySelector('.cpf')
+
+        //_ Extraí o valor do input
+        const cpfValor = inputCpf.value;
+
+        const cpf = new ValidaCpf(cpfValor);
+        const isValido = cpf.valida();
+
+        result.innerHTML = `<p> ${isValido} </p>`
 
     }
 
