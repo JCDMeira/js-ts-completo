@@ -1,4 +1,4 @@
-//* For in - estrutura de repetição
+//* Aula 51 - For in - estrutura de repetição
 
 const frutas = ['Pêra', 'Maça', 'uva'];
 const pessoa = {
@@ -7,7 +7,7 @@ const pessoa = {
     idade: 23,
 }
 
-//#nota# o for in lê os indices ou chaves.
+//#nota# o for in lê os indíces ou chaves.
 
 for(let indices in frutas){
     console.log(frutas[indices])

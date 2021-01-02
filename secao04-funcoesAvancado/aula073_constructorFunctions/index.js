@@ -2,7 +2,7 @@
 
 /*
     #Nota#
-    _ Funções construturas retornam objetos (constroem)
+    _ Funções construtoras retornam objetos (constroem)
     _ são iniciadas com letras maiúsculas. e obrigatóriamente contém a palavra new.
     _ new cria um novo objeto vazio, faz o this apontar para o objeto vazio, e retorna 
     _ implicitamente.
