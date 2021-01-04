@@ -4,14 +4,14 @@
     #Nota#
     _ Na declaração de objeto de forma literal, contém as {} que envolvem o corpo
     _ do objeto. Onde o objeto é literalmente escrito ali na declaração.
-    _ Os objetos tem seu corpo formado por pares de chave e valor, separados por : entre si.
+    _ Os objetos tem seu corpo formado por pares de chave e valor, separados por: entre si.
     _ para inserir novos conjuntos de par chave e valor se separa por vírgula ao final de cada par
     _ é possível acessar uma chave do objeto por notação de ponto -> pessoa.nome ou com
-    _ notação de conlchete -> pessoa['nome']
-    _ a notação de colchete aceita um uso dinámico.
+    _ notação de colchete -> pessoa['nome']
+    _ a notação de colchete aceita um uso dinâmico.
     _ é possível deletar uma chave com o delete
     _ ex -> delete pessoa1.nome
-    _ obejtos podem contér metódos.
+    _ objetos podem conter métodos.
     _ é possível usar factory functions e constructor functions;
 */
 
