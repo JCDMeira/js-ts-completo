@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 556 - Tags HTML para texto (links,imagens,etc)</title>
+
+    <!--
+        https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong
+
+        https://developers.google.com/search/docs/advanced/appearance/qualify-outbound-links?hl=pt-br
+    -->
+
+    <style>
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: blueviolet;
+            align-items: center;
+        }
+
+        p::first-letter {
+            font-size: 32px;
+        }
+
+        a#link2 {
+            color: burlywood;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .umaDiv {
+
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%,0);
+            width: 800px;
+            height: 80px;
+            background: chartreuse;
+            position: relative;
+
+        }
+
+        div.umaDiv p {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.youtube.com" rel="nofollow">link</a>
+    <br>
+    <a href="https://www.youtube.com" target="_blank">link</a>
+
+    <h1 style="background: red;">Cabeçalho</h1>
+    <p>
+        <b> Lorem ipsum </b> dolor sit amet, consectetur adipisicing elit.
+        Repellat neque magni aspernatur amet eius sint, vero nihil
+        perferendis ab est iste ex! Excepturi sit quis accusantium!
+        <strong> Inventore, laboriosam. Similique, dolorem? </strong>
+    </p>
+
+    <p>
+
+        <a id="link" href="https://manhuaplus.com/manga/martial-peak/" target="_blank">Martial-peak</a>
+        <br>
+        <i> Lorem ipsum dolor sit amet consectetur adipisicing elit. </i>
+        Molestias, sit. Explicabo, voluptates, accusantium modi ipsum ex vel
+        tenetur numquam nemo praesentium quia quasi ullam possimus maxime minus
+        voluptatum ipsam vitae?
+        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. </em>
+        Animi sit, natus debitis perferendis praesentium corrupti dicta voluptatibus
+        rem porro optio explicabo magni. Nobis similique cum dolorem repellat id adipisci dolorum.
+        <br>
+        <a href="https://mangalivre.net/manga/solo-leveling/7702" target="_blank">
+            <img src="https://c4.wallpaperflare.com/wallpaper/256/981/302/anime-solo-leveling-sung-jin-woo-hd-wallpaper-preview.jpg"
+                alt="Solém Irmãos">
+    </p>
+    </a>
+    <a href="https://www.google.com.br" id="link2" target="_blank">Pesquisa</a>
+
+    <hr>
+
+    <p>
+        <del>vermelho</del> <ins>azul</ins>
+        <br>
+        <u> riscando sem semantica com a tag u</u>
+        <br>
+        <small>dimuindo textos com a tag small</small>
+        <br>
+        2 <sup>2</sup>
+        H <sub>2</sub>O
+        <br>
+        <q cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q">Tag q para citar algo inline</q>
+    </p>
+
+    <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+        Cria um bloco de citação com o blockquote, esse não pode estar em um paragrafo,
+        mas pode conter paragrafos dentro dele
+    </blockquote>
+
+    <p>
+        Inserindo códigos com o code ->
+        <code>console.log()</code>
+
+        Inserindo texto pré-formatado com tag (pre) ->
+    <pre>
+
+            if(numero){
+                soma += numero
+            }
+
+            console.log(soma);
+        </pre>
+    </p>
+
+    <span>Isto é um span - conteiner genérico sem semantica e inline</span>
+
+    <br>
+    
+    <div class="umaDiv">
+        <p>
+            Eu sou um bloco, usando tag div - e é um conteiner genérico e sem semantica in block
+        </p>
+    </div>
+</body>
+
+</html>
