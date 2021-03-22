@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 560 - Introdução ao CSS box-model</title>
+    <!--
+        https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
+    -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .section-one, .section-two{
+            box-sizing: border-box;
+        }
+        .section-one{
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+            padding: 15px;
+            border: 5px solid black;
+            background-color: deeppink;
+            background-image: url(https://media-exp1.licdn.com/dms/image/C511BAQE2d3cFaLB79A/company-background_10000/0/1519809584090?e=2159024400&v=beta&t=oMiUVRAtN4e0b0pMAecGt3Dm4YEVMhuC8LkJFvJwuZg);
+            background-size: cover;
+            background-position: center center;
+            color: yellow;
+        }
+        .section-two{
+            background-color: cyan;
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+            padding: 15px 0 0 0 ;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+            border-top-color: blue;
+            border-right-color: chartreuse;
+            border-left-color: chocolate;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="section-one">
+        <h1>Section 1</h1>
+    </section>
+    <section class="section-two">
+        <h1>Section 2</h1>
+    </section>
+</body>
+
+</html>
