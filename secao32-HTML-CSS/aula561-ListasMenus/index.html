@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 561 - listas e menus com HTML e CSS</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+        }
+        nav{
+            background: blue;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: red;
+            display: block;
+            padding: 20px 15px;
+            text-transform: uppercase;
+        }
+        nav a:hover{
+            background: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <ol type="A">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <ol type="1" start="5">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <dl>
+        <dt>Café</dt>
+        <dd>Bebida quente que ajuda programadores a suplementar cafeína
+            para então transformar cafeína em códigos
+        </dd>
+        <dt>Item 2</dt>
+        <dd>Descrição 2</dd>
+    </dl>
+</body>
+
+</html>
