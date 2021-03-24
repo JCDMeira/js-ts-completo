@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 563 - Formulários e Inputs HTML - Parte 1/2/3/4</title>
+
+    <!--
+        Referências
+        https://www.w3schools.com/html/html_form_input_types.asp
+        https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form
+    -->
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        label {}
+    </style>
+</head>
+
+<body>
+    <form action="#" method="GET" target="_blank" autocomplete="off">
+        <section>
+            <h1>Cabeçalho</h1>
+            <p>O fórmulário</p>
+
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+                </p>
+                <p>
+                    <label for="dev1">Sou um dev1</label>
+                    <input type="checkbox" id="dev1" name="dev1">
+                </p>
+                <p>
+                    <label for="dev2">Sou um dev2</label>
+                    <input type="checkbox" id="dev2" name="dev2">
+                </p>
+                <p>
+                    <label for="dev3">Sou um dev3</label>
+                    <input type="checkbox" id="dev3" name="dev3">
+                </p>
+                <p>
+                    Gênero: <br>
+                    <label for="masculino">Maculino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <br>
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <br>
+                    <label for="outro">outros</label>
+                    <input type="radio" id="outro" name="genero" value="outro">
+                </p>
+
+                <p>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" value="2020-04-20">
+                </p>
+                <p>
+                    <label for="datetime">datetime:</label>
+                    <input type="datetime-local" id="datetime" name="datetime" value="2020-04-20T20:00">
+                </p>
+
+                <p>
+                    <label for="time">time:</label>
+                    <input type="time" id="time" name="time" value="20:00">
+                </p>
+
+                <p>
+                    <label for="cor">Cor preferida:</label>
+                    <input type="color" id="cor" name="cor" value="#ffff00">
+                </p>
+
+                <p>
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" placeholder="ex.: email@email.com" required>
+                </p>
+                <p>
+                    <label for="password">Digite sua senha</label>
+                    <input type="password" id="password" name="password" placeholder="digite sua senha" required>
+                </p>
+                <p>
+                    <label for="file">Sua foto</label>
+                    <input type="file" id="file" name="file" accept=".png, .svg, .jpeg, image/*" multiple>
+                </p>
+
+                <p>
+                    <label for="number">numbero</label>
+                    <input type="number" id="number" name="number" placeholder="Digite um número de 10 a 50" min="10"
+                        max="50">
+                </p>
+
+                <p>
+                    <label for="range">range:</label>
+                    <input type="range" id="range" name="range" min="0" max="10" step="2">
+                </p>
+
+                <input type="range" list="tickmarks">
+
+                <datalist id="tickmarks">
+                    <option value="0" label="0%">
+                    <option value="10">
+                    <option value="20">
+                    <option value="30">
+                    <option value="40">
+                    <option value="50" label="50%">
+                    <option value="60">
+                    <option value="70">
+                    <option value="80">
+                    <option value="90">
+                    <option value="100" label="100%">
+                </datalist>
+
+                <p>
+                    <label for="url">Sua URL:</label>
+                    <input type="url" id="url" name="url" placeholder="URL">
+                </p>
+
+                <p>
+                    <label for="search">search:</label>
+                    <input type="search" id="search" name="search" placeholder="search">
+                </p>
+
+                <p>
+                    <label for="select">Selecione alguma opção:</label>
+                    <select name="select" id="select" multiple>
+                        <optgroup label="teste 1">
+                            <option value="qualquer 1" label="Label 1">
+                            <option value="qualquer 2" label="Label 2">
+                        </optgroup>
+                        <optgroup label="teste 2">
+                            <option value="qualquer 3" label="Label 3">
+                            <option value="qualquer 4" label="Label 4">
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="textearea">Textarea:</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="9"></textarea>
+                </p>
+
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Enviar</button>
+                </p>
+            </fieldset>
+        </section>
+    </form>
+
+</body>
+
+</html>
