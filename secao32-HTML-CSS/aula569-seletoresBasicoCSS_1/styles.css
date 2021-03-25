@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: #0000fd;
+    font-size: 18px;
+    width: 600px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+p::first-letter{
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: bold;
+}
+.heading{
+    color: #ff0000;
+    margin: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.secao h2{
+    margin: 0 0 -20px 30px;
+    color: coral;
+}
+.secao .titulo2{
+    font-style: italic;
+    color: chartreuse;
+    margin: 0 0 -20px 30px;
+}
+.pai > .filha > p{
+    color: #FFFF00;
+}
+#back{
+    background-color: burlywood;
+    width: 660px;
+    padding: 15px;
+    margin: 50px auto;
+}
+#sec span{
+    color: darkmagenta;
+    margin: 30px 0 -30px 30px;
+    display: block;
+    text-align: center;
+
+}
+#sec #ultimo{
+    color: darkcyan;
+}
