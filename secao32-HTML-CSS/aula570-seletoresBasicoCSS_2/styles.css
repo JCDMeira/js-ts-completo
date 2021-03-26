@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 18px;
+    width: 600px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+p::first-letter{
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+#back{
+    background-color: burlywood;
+    width: 660px;
+    padding: 15px;
+    margin: 50px auto;
+}
+.pai h1+p{
+    color: red;
+}
+.pai p+h1{
+    color: yellow;
+}
+.pai h2~p{
+    color: tomato;
+}
+[meu-atributo]{
+    color: turquoise;
+}
+[meu-atributo="true"]{
+    color: greenyellow;
+}
+[meu-atributo="false"]{
+    color: orange;
+}
