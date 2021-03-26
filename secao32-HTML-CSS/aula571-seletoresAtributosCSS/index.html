@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 571 - Seletores de atributos do CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <input type="checkbox" checked>
+    <input type="checkbox">
+    <div meu-atributo="qualquercoisa-outracoisa palavraSeguidaDeTraco sendoAPrimeiraPalavra">a</div>
+    <div meu-atributo="comecou oAtributoComecaComOIndicado">b</div>
+    <div meu-atributo="osAtributosTerminamComOIndicado termina">c</div>
+    <div meu-atributo="contem temQueConterOIndicado">d</div>
+
+    <!-- 
+        Os seletores de atributos podem ser usados para seus atributos ou os já existentes
+        no HTML. 
+        o |=indica que a palavra vem em primeiro e é seguida de traço, no caso do exemplo o 
+        qualquercoisa é seguido de -outracoisa, e está como primeiro atributo.
+        O ^= é o indicativo de primeiro atributo é tem o começo indicado, e pode ser apenas uma 
+        letra ou fragmento do valor do atributo. no caso é comecou, mas poderia ser c ou come 
+        por exemplo.
+        O $= é para o termina, é o mesmo que o seletor de começa com, mas serve para terminações.
+        No exemplo é a palavra termina, mas poderia ser a ou ina também.
+        Por último o *= é o contem, ele checa se os atributo tem valores que contém o indicado. No 
+        caso foi a palavra contem, mas poderia ser "em tem" pegando o final da palavra contem e o 
+        início da sentença seguinte. Nesses casos é primordial que seja igual ao indicado, se mudar 
+        mesmo que apenas um espaço entre o "em" e o "tem" já não será selecionado mais.
+    -->
+</body>
+
+</html>
