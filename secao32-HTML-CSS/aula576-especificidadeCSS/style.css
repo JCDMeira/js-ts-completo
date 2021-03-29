@@ -1,0 +1,40 @@
+/*
+    id
+    classes, atributos e pseudo-classes
+    elementos e pseudo-elementos
+
+    important > style (no local) > especifidade > ordem (em empates a ordem conta)
+*/
+p{
+    background: greenyellow;
+}
+#p{
+    background: maroon;
+}
+.p{
+    background: yellow;
+}
+#p.p{
+    background: red;
+}
+p#p.p{
+    background: red;
+}
+p#p.p::selection{
+    background: red;
+}
+p#p.p::selection:hover{
+    background: red;
+}
+p#p.p.k{
+    background: aquamarine;
+}
+.i {
+    background: cornflowerblue !important;
+}
+body div ul li a{
+    background: hotpink;
+}
+#link{
+    background: orange;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 576 - especificidade CSS</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!--
+        https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
+        https://www.w3.org/TR/selectors-3/#specificity
+        https://specificity.keegan.st
+    -->
+</head>
+<body>
+    <p class="p" id="p">
+        1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem laudantium non nisi ratione natus nulla perferendis placeat dolor sed incidunt, quis quas at facere! Commodi maxime velit maiores voluptas atque.
+    </p>
+    <p class="p k" id="p">
+        2Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem laudantium non nisi ratione natus nulla perferendis placeat dolor sed incidunt, quis quas at facere! Commodi maxime velit maiores voluptas atque.
+    </p>
+    <p class="p i" id="p">
+        3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem laudantium non nisi ratione natus nulla perferendis placeat dolor sed incidunt, quis quas at facere! Commodi maxime velit maiores voluptas atque.
+    </p>
+    <p class="p" id="p" style="background: blue; color: yellow;">
+        4Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem laudantium non nisi ratione natus nulla perferendis placeat dolor sed incidunt, quis quas at facere! Commodi maxime velit maiores voluptas atque.
+    </p>
+    <div>
+        <ul>
+            <li>
+                <a href="#">teste sem id</a>
+                <a id="link" href="#">teste com id</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
