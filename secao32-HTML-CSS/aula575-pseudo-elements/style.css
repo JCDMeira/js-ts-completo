@@ -1,0 +1,27 @@
+ul li::after{
+    content: ' - ';
+    background: greenyellow;
+    color: red;
+    display: block;
+}
+ul li::before{
+    content: " : ";
+}
+p{
+    font-size: 24px;
+}
+p::first-letter{
+    font-size: 80px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+p::first-line{
+    background: lightcoral;
+}
+p::selection{
+    color: lightseagreen;
+}
+::placeholder{
+    color: maroon;
+}
