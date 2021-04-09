@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 577 - Herança e as propriedades que são passadas para elementos filhos</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- 
+        https://www.sitepoint.com/css-inheritance-introduction/
+        https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+        https://www.w3schools.com/cssref/css_inherit.asp
+    -->
+</head>
+<body>
+    <div id="pai">
+        <h1 class="filho">Teste</h1>
+        <p class="filho">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem praesentium tempora repellendus placeat nobis quisquam maiores cum, in beatae soluta explicabo harum! Autem rerum placeat, perspiciatis ratione rem non vel.
+        </p>
+
+        <p class="filho-sem-herdar">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem praesentium tempora repellendus placeat nobis quisquam maiores cum, in beatae soluta explicabo harum! Autem rerum placeat, perspiciatis ratione rem non vel.
+        </p>
+        <!-- Ao atribuir estilos para o pai, os filhos herdam essas propriedades; -->
+    </div>
+</body>
+</html>

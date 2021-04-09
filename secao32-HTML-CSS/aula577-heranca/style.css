@@ -1,0 +1,10 @@
+#pai{
+    color: red;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+.filho-sem-herdar{
+    font-size: initial;
+    color: initial;
+    font-family: initial;
+}
