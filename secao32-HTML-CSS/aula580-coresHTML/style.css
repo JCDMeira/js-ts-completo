@@ -1,0 +1,26 @@
+.um{
+    width: 300px;
+    height: 300px;
+    background: red;
+}
+.dois{
+    width: 300px;
+    height: 300px;
+    background: #ffff00;
+}
+.tres{
+    width: 300px;
+    height: 300px;
+    background: rgb(0, 255, 255);
+}
+.quatro{
+    width: 300px;
+    height: 300px;
+    background-color: hsl(50, 100, 50);
+}
+/* 
+    podem ser colocados mais de uma forma de passar as referências de cores
+    Por indicação da cor por seu nome em inglês, um código hexadecimal e por
+    valores RGB.
+    O padrão HSL é representado por Hue (tom), Saturation (saturação) e Lightness (luminosidade)
+*/
