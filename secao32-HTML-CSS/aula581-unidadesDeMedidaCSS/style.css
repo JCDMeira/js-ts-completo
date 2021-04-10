@@ -1,0 +1,73 @@
+html{
+    font-size: 62.5%;
+    /*
+        a font natural teria 16px, ao fazer ela ser 62.5% obtém um número de 10px
+        fazendo ficar mais fácil o escalonamento no código
+    */
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.um{
+    font-size: 20px;
+}
+.pai{
+    font-size: 50px;
+}
+.dois{
+    font-size: 0.5em;
+    /*
+        tem um tamanho relativo ao elemento pai mais próximo
+        1 será 100%, pode usar maiores ou menores que um. 
+    */
+}
+.ajustavel{
+    width: 30rem;
+    height: 30rem;
+    background: yellow;
+}
+.tres{
+    font-size: 1.6rem;
+    /*
+        se baseia no elemento root, aqui no caso 1.6 x 10 = 16px
+    */
+}
+.view{
+    width: 50vw;
+    height: 100vh;
+    background: yellowgreen;
+}
+.quatro{
+    font-size: 2vh;
+}
+.color{
+    background: tomato;
+}
+.cinco{
+    font-size: 20px;
+}
+.pai2{
+    width: 50rem;
+    height: 50rem;
+    background: violet;
+}
+.pai2 > div{
+    width: 50%;
+    height: 50%;
+    background: wheat;
+    /*
+        a % se refere ao elemento pai
+    */
+}
+.seis{
+    font-size: 1.8rem;
+}
+/*
+    vmin é 1% da menor parte do viewport (largura ou altura)
+    vmax é 1% da maior parte do viewport (largura ou altura)
+
+    2vmin = 2% da menor
+    5vmax = 5% da maior
+*/
