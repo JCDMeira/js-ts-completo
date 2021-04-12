@@ -1,0 +1,16 @@
+p{
+    color:white;
+    background-color:darkslateblue;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    direction: ltr;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    line-height: 30px;
+    text-align: left;
+    /*text-decoration: line-through;*/
+    text-indent: 50px;
+    text-shadow: 2px 2px 2px cyan;
+    text-transform: capitalize;
+}
