@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 40px;
+}
+.grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    /* 
+        modelo de atribuição para quantas colunas a grid terá e quais seus tamanhos, 
+        sendo fr uma medida de um fragmento.
+
+        _ grid-template-columns: 1fr 1fr 1fr;
+        
+        Também é possível criar padrões com a função repeat();
+        ex:
+        _    repeat(3, 1fr);
+        _    repeat(3, 1fr 2fr);
+
+        isso cria repetições, particularmente útil para caso existam muitas colunas
+     */
+
+    /* #importante#     Grid responsiva */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+    gap: 30px; 
+}
+.grid div{
+    background: tomato;
+    min-height: 100px;
+}
+/* 
+    Também é possível colocar uma coluna em cima da outra conforme o exemplo abaixo:
+
+    .grid div:nth-child(5), div:nth-child(6){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-start: 2;
+    background: darkred;
+    } 
+*/
+/* 
+    Controlando quanto cada elemento ocupa em colunas e linhas.
+    .grid div:nth-child(5){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background: darkred;
+    } 
+*/
+.grid div:nth-child(5){
+    background: darkred;
+    grid-row: span 1;
+    grid-column: span 2;
+}
+@media(max-width: 768px){
+    .grid div:nth-child(5){
+        grid-column: span 1;
+    }
+}
