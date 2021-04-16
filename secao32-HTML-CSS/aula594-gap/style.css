@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 40px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin-right: -30px;
+}
+.grid div{
+    background: tomato;
+    min-height: 100px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.grid div:nth-child(5){
+    background: darkred;
+}
+/* 
+    Nem sempre a propriedade de gap é aceita pelos navegadores, isso pode causar a
+    desfiguração do seu site. 
+    Para acertar o espaçamento entre os elementos da grid é possível usar recursos 
+    mais antigos e assim sanar a deficiência de incorporação do design.
+    para isso se cria uma div conteiner que sustenta a grid, e se passa o tamanho e 
+    margir (para alinhamento) para a conteiner e coloca um overflow: hidden; escondendo 
+    o que sobrar. Ademais se adiciona nos elementos uma margir desejada na esquerda e embaixo.
+    Isso causa um deslocamento na grid, que pode ser corrigido com uma margir negativa a 
+    esquerna na grid com o mesmo valor inserido nos elementos.
+
+*/
