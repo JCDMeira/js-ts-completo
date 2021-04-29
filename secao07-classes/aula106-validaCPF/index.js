@@ -18,12 +18,12 @@ class ValidaCPF {
 
     geraNovoCpf() {
         const cpfParcial = this.cpfLimpo.slice(0, -2);
-        const digito1 = this.geraDigito(cpfParcial);
-        const digito2 = this.geraDigito(cpfParcial + digito1);
+        const digito1 = ValidaCPF.geraDigito(cpfParcial);
+        const digito2 = ValidaCPF.geraDigito(cpfParcial + digito1);
         this.novoCPF = cpfParcial + digito1 + digito2;
     }
 
-    geraDigito(cpfParcial) {
+    static geraDigito(cpfParcial) {
         let total = 0;
         let reverso = cpfParcial.length + 1;
 
