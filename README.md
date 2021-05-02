@@ -72,9 +72,14 @@ A seguir estão as configurações usadas no better comments.
     "explorer.confirmDelete": false,
     "git.confirmSync": false,
     "better-comments.tags": [
+        
+
+
+        
+    
     
         {
-            "tag": "#importante",
+            "tag": "!importante",
             "color": "#FF2D00",
             "strikethrough": false,
             "underline": false,
@@ -92,7 +97,16 @@ A seguir estão as configurações usadas no better comments.
             "italic": false
         },
         {
-            "tag": "#aviso",
+            "tag": "@aviso",
+            "color": "#ffff00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "@",
             "color": "#ffff00",
             "strikethrough": false,
             "underline": false,
@@ -110,6 +124,15 @@ A seguir estão as configurações usadas no better comments.
             "italic": false
         },
         {
+            "tag": "#",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
             "tag": "//",
             "color": "#474747",
             "strikethrough": true,
@@ -119,7 +142,7 @@ A seguir estão as configurações usadas no better comments.
             "italic": false
         },
         {
-            "tag": "#nota",
+            "tag": "_nota",
             "color": "#FF8C00",
             "strikethrough": false,
             "underline": false,
@@ -130,6 +153,15 @@ A seguir estão as configurações usadas no better comments.
         {
             "tag": "_",
             "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "-",
+            "color": "#FFA56F",
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",
@@ -171,7 +203,15 @@ A seguir estão as configurações usadas no better comments.
         "borderStyle : solid",
         "borderWidth : 1px",
         "borderColor : {color}; opacity: 0.5"
-    ]
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "liveServer.settings.donotVerifyTags": true
 }
 ```
 Após configurar lembre-se de aplicar um "reload  window" no visual studio code.
