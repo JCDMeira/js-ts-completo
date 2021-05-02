@@ -1,5 +1,5 @@
 /* 
-* SUMÁRIO
+* SUMÁRIO 02/05/2021
     _Seção 1:Configurando o ambiente no Windows e Linux
     _Seção 2:JavaScript Básico - Para iniciantes
     _Seção 3:JavaScript - Lógica de programação
@@ -25,10 +25,14 @@
     _Seção 23:TypeScript - Namespaces e modules
     _Seção 24:TypeScript - Princípios SOLID (S.O.L.I.D.)
     _Seção 25:TypeScript - Testes com Jest
-    _Seção 26:Typescript e React
+    _Seção 26:Typescript e React (pomodoro app)
     _Seção 27:TypeScript - Design Patterns (Padrões de projeto)
     _Seção 28:NextJS + Strapi
     _Seção 29:Deploy NextJS + Strapi no Ubuntu Server 20.04
-    _Seção 30:Notas finais
-    _Seção 31:## MAIS BÔNUS GRATUITOS ##
+    #seção 30: bases de dados relacionais
+    #seção 31: knex.js
+    #seção 32: HTML e CSS para iniciantes
+    #seção 33: Landing page com HTML5 e CSS3
+    _Seção 34:Notas finais
+    _Seção 35:## MAIS BÔNUS GRATUITOS ##
 */
