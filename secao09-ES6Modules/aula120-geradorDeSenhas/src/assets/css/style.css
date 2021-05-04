@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.senha-gerada{
+  font-size: 2em;
+  color: var(--primary-color);
+  margin: 40px 0;
+}
+.button-content{
+  margin: 15px;
+}
+.button-content .limite{
+  margin-left: 10px;
+  width: 80px;
+  border: 1px solid var(--primary-color);
+}
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+}
+button{
+  display: block;
+  margin: 40px 0;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 15px;
+  border: 4px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--primary-color-darker);
+  color: white;
+  box-shadow: 1px 1px 10px 5px var(--primary-color);
+
+}
+.gerar{
+  width: 400px;
+  margin: 0 auto;
+}
