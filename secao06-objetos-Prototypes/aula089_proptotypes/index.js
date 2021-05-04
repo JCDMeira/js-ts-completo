@@ -25,13 +25,18 @@
 function Pessoa(nome, sobrenome){
     this.nome = nome;
     this.sobrenome = sobrenome;
-    this.nomeCompleto = ()=> this.nome + ' ' + this.sobrenome;
+    // this.nomeCompleto = ()=> this.nome + ' ' + this.sobrenome;
 }
-pessoa1.proto.estouAqui ='Hahahaha';
 
 Pessoa.prototype.nomeCompleto = function(){
     return this.nome + ' ' + this.sobrenome;
 };
 
 const pessoa1 = new Pessoa('Jean', 'Meira')
+const pessoa2 = new Pessoa('fulano',  'de tal')
+
+
 console.log(pessoa1);
+console.log(pessoa2);
+console.log();
+console.log(pessoa1.nomeCompleto(), ' e ', pessoa2.nomeCompleto());
