@@ -72,11 +72,6 @@ A seguir estão as configurações usadas no better comments.
     "explorer.confirmDelete": false,
     "git.confirmSync": false,
     "better-comments.tags": [
-        
-
-
-        
-    
     
         {
             "tag": "!importante",
@@ -166,6 +161,15 @@ A seguir estão as configurações usadas no better comments.
             "underline": false,
             "backgroundColor": "transparent",
             "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*Título",
+            "color": "#d100fa",
+            "strikethrough": false,
+            "underline": true,
+            "backgroundColor": "transparent",
+            "bold": true,
             "italic": false
         },
         {
