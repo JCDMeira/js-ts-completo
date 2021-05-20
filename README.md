@@ -261,3 +261,5 @@ Após configurar lembre-se de aplicar um "reload  window" no visual studio code.
 Perfil do linkedin - [Linkedin](https://www.linkedin.com/in/jean-carlos-de-meira-00593816a/)
 
 Perfil do instagram - [Instagram](https://www.instagram.com/jean.meira10/?hl=pt-br)
+
+Página pessoal - [jcdmeira](https://jcdmeira.github.io)
