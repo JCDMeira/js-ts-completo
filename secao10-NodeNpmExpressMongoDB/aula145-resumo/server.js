@@ -13,6 +13,7 @@ mongoose.connect(process.env.CONNECTIONSTRING, {useNewUrlParser: true, useUnifie
 
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
+
 const flash = require('connect-flash');
 
 const routes = require('./routes');
@@ -26,6 +27,7 @@ const {middlewareGlobal, checkCsrfError, csrfMiddleware} = require('./src/middle
 app.use(helmet());
 
 app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 
