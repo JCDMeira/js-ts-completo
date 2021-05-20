@@ -14,6 +14,7 @@
 - [Detalhes do Curso](#id01)
   - [Instrutor](#id02)
   - [Projetos desenvolvidos no curso](#id02.1)
+    - [Landing-page modelo](#id02.2)
 - [Como usar esse projeto](#id03)
   - [Procedimentos de instalação](#id04)
   - [Dicas para acompanhar](#id05)
@@ -43,9 +44,9 @@ Músico nas horas vagas.
 [Otávio Miranda](https://www.otaviomiranda.com.br)
 
 # 📝 Projetos desenvolvidos no curso <a name="id02.1"></a>
-    No presente curso ha alguns projetos com o objetivo de consolidar o aprendizado durante o curso, e esses foram separados do repositório do curso.
+No presente curso ha alguns projetos com o objetivo de consolidar o aprendizado durante o curso, e esses foram separados do repositório do curso.
 
-## 📝 Landing-page modelo<a name="id02.1"></a>
+## 📝 Landing-page modelo<a name="id02.2"></a>
 
 Foi criado na seção 34, usando como base todo conteúdo da seção 33 sobre HTML5 e CSS3.
 O modelo contempla uma landing-page de página única, com menu superior e diversas seções. As seções estão ancoradas ao menu por seus IDs e podem ser acessadas de forma rápida através dele, ou se desejar é possível apenas scrolar o mouse.
