@@ -15,6 +15,7 @@
   - [Instrutor](#id02)
   - [Projetos desenvolvidos no curso](#id02.1)
     - [Agenda](#id02.2)
+    - [Lista de Tarefas](#id02.4)
     - [Landing-page modelo](#id02.3)
 - [Como usar esse projeto](#id03)
   - [Procedimentos de instalação](#id04)
@@ -53,6 +54,12 @@ Projeto criado seguindo a seção 11, contendo operações C.R.U.D (create, read
 A agenda cadastra e possibilita a entrada de contas de usuário, e também permite cadastro, visualização, atualização e deleção de contatos.
 
 [Repositório projeto Agenda](https://github.com/JCDMeira/agenda)
+
+## 📝 Lista de tarefas<a name="id02.4"></a>
+
+Projeto criado seguindo a seção 14, como uma proposta de aprender na prática como funciona o react. Usando funções básicas do React, como os componentes e react icons, e usando o local Storage para salvar as tarefas mesmo ao atualizar a página.
+
+[Repositório projeto lista de tarefas](https://github.com/JCDMeira/lista-tarefas)
 
 ## 📝 Landing-page modelo<a name="id02.3"></a>
 
