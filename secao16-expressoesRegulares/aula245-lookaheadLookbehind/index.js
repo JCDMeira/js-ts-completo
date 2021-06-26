@@ -1,12 +1,10 @@
-//* Aula 244 - Retrovisores com match e replace
+//* Aula 245 - Lookahead e Lookbehind (Lookaround)
 
 /*
     @ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
     
     _Nota_
-    _ $1 $2 $3 -> retrovisores
-    _ é possível selecionar como se fossem variáveis
-    _ o ?: evita do retrovisor ser contado
+    _ 
 */
 const { html2 } = require("../base");
 
