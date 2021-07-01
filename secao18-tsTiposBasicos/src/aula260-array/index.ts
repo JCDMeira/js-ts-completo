@@ -1,4 +1,4 @@
-// * Aula 259 - tipo array
+// * Aula 260 - tipo array
 
 /*
     _Nota_
