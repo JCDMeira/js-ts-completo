@@ -11,9 +11,9 @@ module.exports = {
                 test: /\.tsx?$/,
                 loader: "ts-loader",
                 exclude: /node_modules/,
-                // options: {
-                //     configFile: "tsconfig.frontend.json",
-                // },
+                options: {
+                    configFile: "tsconfig.frontend.json",
+                },
             },
         ],
     },
@@ -22,7 +22,7 @@ module.exports = {
     },
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "dist", "assets", "js"),
+        path: path.resolve(__dirname, "frontend", "assets", "js"),
     },
     devtool: "source-map",
 };
