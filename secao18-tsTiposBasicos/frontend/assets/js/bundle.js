@@ -2,14 +2,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/aula273-webpack/mode.ts":
-/*!*************************************!*\
-  !*** ./src/aula273-webpack/mode.ts ***!
-  \*************************************/
+/***/ "./src/aula275-exercicio/form-control.ts":
+/*!***********************************************!*\
+  !*** ./src/aula275-exercicio/form-control.ts ***!
+  \***********************************************/
 /***/ (() => {
 
 
-console.log("módulo");
 
 
 /***/ })
@@ -45,12 +44,12 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 var exports = __webpack_exports__;
-/*!**************************************!*\
-  !*** ./src/aula273-webpack/index.ts ***!
-  \**************************************/
+/*!****************************************!*\
+  !*** ./src/aula275-exercicio/index.ts ***!
+  \****************************************/
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__webpack_require__(/*! ./mode */ "./src/aula273-webpack/mode.ts");
+__webpack_require__(/*! ./form-control */ "./src/aula275-exercicio/form-control.ts");
 
 })();
 
