@@ -1,1 +1,1 @@
-console.log("Olá mundo");
+import "./mode";
