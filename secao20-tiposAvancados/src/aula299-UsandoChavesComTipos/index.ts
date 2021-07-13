@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-//  * Aula 300 - Usando this como tipo
+//  * Aula 299 - Usando chaves como tipo
 
 /*
     _Nota_
