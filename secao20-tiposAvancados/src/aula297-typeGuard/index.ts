@@ -1,47 +1,47 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-//  * Aula 296 - Declaration merging em interfaces
+//  * Aula 297 - Type Guard - refinando tipos
 
 /*
     _Nota_
-    _ não pode ter conflito de nome com um type e uma
-    _ interfac, mas pode haver duas interfaces com
-    _ nome iguais.
-    _ Ao usar duas interfaces de nomes iguais acontece
-    _ um fenômeno chamado de declaration merging, ou seja,
-    _ ambos os objetos são unidos em um objeto maior, e todos
-    _ que usarem a interface vão precisar ter todas as características
-    _ aprensentadas na junção de ambas interfaces.
+    _ Os tipe guards são como uma garantia de que o tipo
+    _ é aquele, como os if's mostrados no código abaixo
+    _ como se após a checagem de tipo, o tipo só pode
+    _ ser aquele que a checagem atestou, e assim o typeScript
+    _ já infere que o tipo é aquele, entendendo a dinâmica do
+    _ código.
+    _ Também pode criar uma chave passando o tipo para o objeto.
 */
 
-type Pessoa296 = {
-  nome: string;
+export function add(a: unknown, b:unknown): number | string{
+    if(typeof a === "number" && typeof b === "number") return a + b;
+    return `${a} + ${b}`;
 }
 
-//  # da erro, conflitando com o typ
-// interface Pessoa296 {
-//   sobrenome: string;
-// }
+console.log(add(1, 2));
+console.log(add("a", "b"));
 
-interface PessoaAgora {
-  readonly nome: string;
+type Pessoa = { tipo: "pessoa", nome: string};
+type Animal = { tipo: "animal", cor: string};
+
+type PessoaOuAnimal = Pessoa | Animal;
+
+export class Aluno implements Pessoa {
+    constructor(public nome: string){}
+    tipo: "pessoa" = "pessoa";
 }
 
-interface PessoaAgora {
-  readonly sobrenome: string;
+function mostraNome(obj: PessoaOuAnimal): void {
+    // if("nome" in obj) console.log(obj.nome);
+    // if(obj instanceof Aluno) console.log(obj.nome);
+    switch(obj.tipo) {
+    case "pessoa":
+        console.log(obj.nome);
+        return;
+    case "animal":
+        console.log("Isso é um animal",obj.cor);
+        return;
+    }
 }
 
-interface PessoaAgora {
-  readonly enderecos: string[];
-}
-
-interface PessoaAgora {
-  readonly idade?: number;
-}
-
-const pessoaAgora: PessoaAgora = {
-    nome: "jean",
-    sobrenome: "meira",
-    enderecos: ["Av. Brasil"]
-};
-
-console.log(pessoaAgora);
+mostraNome(new Aluno("João"));
+mostraNome({tipo:"animal",cor: "laranja"});
