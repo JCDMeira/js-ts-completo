@@ -19,4 +19,3 @@ const adder: Adder = (x: number, y?: number, ...args: number[]) => {
 console.log(adder(1));
 console.log(adder(1, 2));
 console.log(adder(1, 2, 3, 4));
-
