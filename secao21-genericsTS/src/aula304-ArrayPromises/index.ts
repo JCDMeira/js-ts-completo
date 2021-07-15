@@ -1,25 +1,45 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-//  * Aula 304 - Array e Promises são generics
+//  * Aula 305 - Generics com interfaces e Type Alias
 
 /*
     _Nota_
 */
 
-type MeuTipo = number;
-
-const arrayNumeros: Array<number> = [ 1, 2, 3, 4, 5, 6];
-
-async function promiseAsync() {
-    return 1;
+interface PessoaProtocolo <T = string, U= number> {
+  nome: T;
+  sobrenome: T;
+  idade: U
 }
 
-function minhaPromise(): Promise<MeuTipo> {
-    return new Promise((resolve, reject) => {
-        setTimeout(()=> {
-            resolve(1);
-        }, 1000);
-    });
+type PessoaProtocolo2 <T = string, U= number> = {
+  nome: T;
+  sobrenome: T;
+  idade: U
 }
 
-promiseAsync().then((resultado) => console.log(resultado + 1));
-minhaPromise().then((resultado) => console.log(resultado + 1));
+const Aluno1: PessoaProtocolo = {
+    nome: "Luiz",
+    sobrenome: "miranda",
+    idade: 30
+};
+
+const Aluno2: PessoaProtocolo<number, number> = {
+    nome: 123,
+    sobrenome: 456,
+    idade: 30
+};
+
+const Aluno3: PessoaProtocolo2 = {
+    nome: "Luiz",
+    sobrenome: "miranda",
+    idade: 30
+};
+
+const Aluno4: PessoaProtocolo2<number, number> = {
+    nome: 123,
+    sobrenome: 456,
+    idade: 30
+};
+
+console.log(Aluno1, Aluno2);
+console.log(Aluno3, Aluno4);
