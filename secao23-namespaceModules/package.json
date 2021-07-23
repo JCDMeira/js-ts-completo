@@ -28,6 +28,8 @@
     "wepack-cli": "^0.0.1-security"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.171",
+    "lodash": "^4.17.21",
     "validator": "^13.6.0"
   }
 }
